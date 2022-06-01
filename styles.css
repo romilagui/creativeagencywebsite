@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+:root {
+    --primary-color: #f60f20;
+}
+/* BASE STYLES*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* BUTTON */
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    background: var(--primary-color);
+    color : #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 20px 0;
+    border: 0;
+}
+.btn:hover {
+    transform: scale(0.98);
+}
+h1 {
+    font-size: 30px;
+    color: #111 ;
+}
+html,
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #111;
+    font-size: 16px;
+}
+
+/* HOMEPAGE */
+.home-content {
+    position: relative;
+    z-index: 10;
+    max-width: 600px;
+}
+.home-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 110%;
+}
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    font-size: 2rem;
+    font-weight: 700;
+    z-index: 10;
+}
+
+/* NAVIGATION */
+.navigation {
+    display: none;
+}
+p {
+    margin: 20px 0 10px;
+    font-size: 1.1rem;
+}
+section {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 100px;
+
+}
+
+/* TOGGLE */
+.toggle {
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color) url(../menu.png);
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    z-index: 20;
+}
+.toggle.active {
+    background: var(--primary-color) url(../close.png);
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
